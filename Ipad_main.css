@@ -1,0 +1,42 @@
+h1,
+h2 {
+  width: 143%;
+  border: white 3px solid;
+}
+a {
+  border: white 1px solid;
+}
+
+img {
+  float: right;
+  width: 85%;
+  padding: 25px 25px;
+  border-radius: 25px;
+  margin-right: -345px;
+  margin-top: 68px;
+
+  animation-name: priyanshu;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+} 
+body {
+  animation-name: priyanshu;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes priyanshu {
+  0%,
+  100% {
+    /*background: url(cake_photos/display1.PNG);*/
+    background-image: url(cake_photos/display1.png);
+  }
+  33% {
+    /*background: url(cake_photos/display2.PNG);*/
+    background-image: url(cake_photos/display2.png);
+  }
+  66% {
+    /*background: url(cake_photos/display3.PNG);*/
+    background-image: url(cake_photos/display3.png);
+  }
+}

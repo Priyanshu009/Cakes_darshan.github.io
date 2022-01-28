@@ -1,0 +1,60 @@
+
+:root {
+  --width: 1136px;
+}
+
+/* headings */
+h1,
+h2 {
+  width: var(--width);
+  box-sizing: border-box;
+}
+
+/*navigations panel*/
+#navbar h4 {
+  height: 30px;
+  width: 160px;
+  text-align: center;
+  justify-content: center;
+}
+#navbar ul {
+  flex-direction: row;
+}
+#navbar ul li {
+  height: 60px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+}
+#navbar ul li a:hover {
+  padding: 10px 0px;
+  color: var(--border) ;
+  margin: 0px;
+  background-color: black;
+}
+
+/* content */
+.container {
+  width: var(--width);
+}
+.cake_img {
+  position: relative;
+  left: 25px;
+  height: 350px;
+  width: 350px;
+}
+.cake_infor {
+  position: relative;
+  right: -292px;
+  color: white;
+  background-color: black;
+  border: var(--border) solid 3px;
+  border-radius: 20px;
+  padding: 9px;
+  margin: 9px;
+  /* width: 630px;*/
+  width: 40%;
+}
+.table {
+  top: 17px;
+}

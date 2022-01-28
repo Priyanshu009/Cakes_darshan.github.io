@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate flavour Cakes</title>
+    <!--<link rel="stylesheet" href="cake_caste.css" />-->
+    <style>
+      /* if p is contained by any li which is contained by div */
+      /* div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+      /* if p is right inside div then this CSS will be applied */
+      /* div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+      /* if p is right after div i.e p is the next sibling of div*/
+      /* div + p{
+        color: white;
+        background-color: rgb(238, 137, 137);
+    } */
+      body {
+        background-color: black;
+      }
+
+      /*#division {
+        position: relative;
+        top: 18px;
+        right: -1px;
+        display: flex;
+        flex-direction: column;
+      }*/
+      /* #division h1 {
+        color: white;
+        width: auto;
+        background-color: black;
+        font-weight: bolder;
+        font-size: 2.8rem;
+        border: blue solid;
+        border-radius: 9px;
+        padding: 3px;
+        margin: 6px;
+        text-align: center;
+        justify-content: center;
+        text-shadow: 7px 7px 7px white;
+      }*/
+      /*#header{
+        content: "";
+        background: url(cake__.PNG);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+      }*/
+      :root {
+        --border: Chocolate;
+      }
+
+      /* headings */
+      h1 {
+        color: white;
+        display: block;
+        /*width: auto;*/
+
+        background-color: black;
+        font-weight: bolder;
+        font-size: 38px;
+        border: var(--border) solid;
+        border-radius: 9px;
+        padding: 3px;
+        margin: 6px;
+        text-align: center;
+        /*text-shadow: 7px 7px 7px white;*/
+        /*inset: -7px 7px 10px white;*/
+      }
+      h2 {
+        color: white;
+        width: auto;
+        background-color: black;
+        font-weight: bold;
+        font-size: 34px;
+        border: var(--border) solid;
+        padding: 3px;
+        margin: 6px;
+        text-align: center;
+        border-radius: 9px;
+        /*text-shadow: 7px 7px 7px white;*/
+        /*inset: -7px 7px 10px white;*/
+      }
+      /*float: right;*/
+      /*width: 1187px;*/
+      /*width: auto;*/
+      /*width: 50%;*/
+      /*right: 5px;*/
+
+      /*text-align: center;
+        color: white;
+        background-color: black;
+        font-weight: bolder;
+        font-size: 38px;
+        border: blue solid;
+        padding: 3px;
+        margin: 7px;
+        text-shadow: 7px 7px 7px rgb(172, 162, 162);*/
+
+      /*.nav{
+          float: right;
+          display: flex;
+          flex-wrap: wrap;
+          font-weight: bold;
+          color: white;
+      }
+      .d{
+          border: blue solid 3px;
+          border-radius: 3px;
+          padding: 5px;
+          margin: 2px;
+      }*/
+
+      /* navigation panel */
+      #navbar {
+        display: flex;
+        position: relative;
+      }
+      /*#navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+      }*/
+      #navbar h4 {
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        font-size: 25px;
+        border: var(--border) solid;
+        padding: 6px 6px;
+        margin: 9px 9px;
+        width: 70px;
+      }
+      #navbar ul {
+        display: flex;
+        padding: 3px 3px;
+        margin: 6px 6px;
+        border-radius: 6px;
+      }
+      #navbar ul li {
+        background-color: black;
+        list-style: none;
+        font-weight: bold;
+        font-size: 1.3rem;
+        border: var(--border) solid 3px;
+        border-radius: 3px;
+      }
+      #navbar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-weight: bolder;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 12px;
+        margin: -3px 15px;
+        /*text-shadow: 7px 7px 10px white;*/
+      }
+      #navbar ul li a:hover {
+        color: var(--border);
+        background-color: black;
+      }
+
+      /* content and photo */
+      #header {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        /* Initialize the container as a flex box */
+
+        /* Flex properties for a flex container */
+
+        /* flex-direction: row; (Default value of flex-direction is row) */
+        /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+        /* flex-wrap: wrap-reverse; */
+
+        /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+        /* flex-flow: row-reverse wrap; */
+
+        /* justify-content will justify the content in horizontal direction */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* justify-content will justify the content in vertical direction */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+
+        /*flex-wrap: wrap;*/
+        /* justify-content: center;*/
+        /* align-items: center; /**/
+        display: flex;
+        height: 344px;
+        width: 1288px;
+        background-color: black;
+        border: var(--border) solid 3px;
+        border-radius: 10px;
+        padding: 9px;
+        margin: 15px;
+      }
+      .cake_infor {
+        position: relative;
+        right: 25px;
+        color: white;
+        background-color: black;
+        border: var(--border) solid 3px;
+        border-radius: 20px;
+        padding: 9px;
+        margin: 9px;
+        /* width: 630px;*/
+        width: 50%;
+        font-size: large;
+        font-weight: bolder;
+      }
+      .cake_img {
+        position: relative;
+        left: 25px;
+        height: 350px;
+        width: 50%;
+      }
+
+      /* table etc */
+      .table {
+        position: relative;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        top: 60px;
+        left: 2px;
+        font-size: large;
+        font-weight: bolder;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .table th {
+        border: var(--border) 3px solid;
+        font-weight: bolder;
+        padding: 20px 70px;
+        margin: 5px 20px;
+      }
+      .table td {
+        border: var(--border) 3px solid;
+        padding: 20px 70px;
+        margin: 5px 20px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 361px)"
+      href="small_phone.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 481px) and (min-width: 361px)"
+      href="phone.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px) and (min-width: 481px)"
+      href="tab.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1025px) and (min-width: 768px)"
+      href="Ipad.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1281px) and (min-width: 1025px)"
+      href="desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1326px)"
+      href="huge_screen.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h4>filters</h4>
+      <ul>
+        <li><a href="choco_0.5kg.html" target="_blank"> 0.5 kg </a></li>
+        <li><a href="choco_1kg.html" target="_blank"> 1 kg </a></li>
+        <li><a href="choco_1.5kg.html" target="_blank"> 1.5 kg </a></li>
+        <li><a href="choco_1.5kg+.html" target="_blank"> 1.5kg + </a></li>
+        <!--<li><a href="online_order.html" target="_blank"> online order </a></li>
+        <li><a href="about_us.html" target="_blank"> About us </a></li>
+        <li><a href="contact_us.html" target="_blank"> Contact us </a></li>-->
+      </ul>
+    </nav>
+
+    <header id="header">
+      <h1>Cake Caste</h1>
+      <h2>Chocolate flavour Cakes</h2>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/101_1.5-730 (2).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:101
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 800</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/102_1.5-730.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:102
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 800</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/105_1-460.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:105
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/106_1-460_2-850.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:106
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+            <tr>
+              <td>2 kg</td>
+              <td>Rs 920</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/107_1-470.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:107
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 540</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/108_1-500_1.5-700.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:108
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 770</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/109_1-500_1.5-750 (2).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:109
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 820</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/110_1-500_1.5-750.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:110
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 820</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/112_1-560_1.5-800.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:112
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 630</td>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 870</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/114_500-230_1-440.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:114
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 300</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 510</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/115_500-230_1-440.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:115
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 300</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 510</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/117_500-250_1-460 (2).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:117
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/118_500-250_1-460 (3).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:118
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/119_500-250_1-460 (3).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:119
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/120_500-250_1-460 (4).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:120
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/121_500-250_1-460 (4).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:121
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/122_500-250_1-460 (5).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:122
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/123_500-250_1-460 (5).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:123
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/124_500-250_1-460 (6).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:124
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/125_500-250_1-460 (6).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:125
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/126_500-250_1-460 (7).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:126
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/127_500-250_1-460 (7).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:127
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/129_500-250_1-460 (8).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:129
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/130_500-250_1-460 (9).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:130
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/131_500-250_1-460 (9).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:131
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/132_500-250_1-460 (10).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:132
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/133_500-250_1-460 (10).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:133
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/134_500-250_1-460 (11).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:134
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/135_500-250_1-460 (12).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:135
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/136_500-250_1-460 (13).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:136
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/137_500-250_1-460 (14).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:137
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/138_500-250_1-460 (15).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:138
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/139_500-250_1-460 (16).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:139
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/140_500-250_1-460 (17).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:140
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/143_500-250_1-460.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:143
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/144_500-250_1-460_1.5-670.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:144
+          <table class="table">
+            <!--<tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>-->
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 320</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 530</td>
+            </tr>
+            <tr>
+              <td>1.5 kg</td>
+              <td>Rs 740</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/145_500-260_1-470.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:145
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 330</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 540</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/146_500-260_1-480.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:146
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 330</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 550</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/147_500-270_1-500 (2).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:147
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 340</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/148_500-270_1-500 (2).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:148
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 340</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/149_500-270_1-500 (3).png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:149
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 340</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/150_500-270_1-500.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:150
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 340</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/151_500-270_1-500.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:151
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 340</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 570</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/152_500-300_1-550.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:152
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 370</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 620</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="cake_img">
+          <img src="cake_photos/154_500-320_1-600.png" alt="image not available" />
+        </div>
+        <div class="cake_infor">
+          Cake number:154
+          <table class="table">
+            <tr>
+              <th>available in:</th>
+              <th>Rs:</th>
+            </tr>
+            <tr>
+              <td>0.5 kg</td>
+              <td>Rs 390</td>
+            </tr>
+            <tr>
+              <td>1 kg</td>
+              <td>Rs 670</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </header>
+    <!--media query we need to add    tut-30-->
+  </body>
+</html>
